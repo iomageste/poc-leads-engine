@@ -39,9 +39,9 @@ Sempre que for solicitado a criar um novo Quiz, Teste ou Formulário, siga exata
 
    - IMEDIATAMENTE após gerar o código, inicie o servidor de desenvolvimento para esta aplicação específica.
 
-- Rode o comando no terminal: npm run dev -w apps/{slug-da-campanha}.
+   - Rode o comando no terminal: `npm run dev -w apps/{slug-da-campanha}.`
 
-- Isso garantirá que o preview seja exibido para o usuário validar.
+   - Isso garantirá que o preview seja exibido para o usuário validar.
 
 ## 💻 3. Regras de Código (Coding Standards)
 
