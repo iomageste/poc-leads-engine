@@ -1,0 +1,59 @@
+{
+  "title": "Descubra seu Perfil Tech",
+  "questions": [
+    {
+      "text": "Quando um site cai, qual seu primeiro pensamento?",
+      "options": [
+        { "label": "A culpa é do CSS que quebrou o layout", "type": "Frontend" },
+        { "label": "O banco de dados deve ter travado (deadlock)", "type": "Backend" },
+        { "label": "O servidor estourou a memória ou o deploy falhou", "type": "DevOps" }
+      ]
+    },
+    {
+      "text": "Qual ferramenta você prefere abrir primeiro?",
+      "options": [
+        { "label": "Figma / Chrome DevTools", "type": "Frontend" },
+        { "label": "Postman / Datagrip", "type": "Backend" },
+        { "label": "Terminal / AWS Console", "type": "DevOps" }
+      ]
+    },
+    {
+      "text": "O que te dá mais satisfação?",
+      "options": [
+        { "label": "Ver a animação rodando a 60fps suave", "type": "Frontend" },
+        { "label": "Uma query complexa rodando em milissegundos", "type": "Backend" },
+        { "label": "O pipeline CI/CD passando verde em 1 min", "type": "DevOps" }
+      ]
+    },
+    {
+      "text": "Como você lida com erros?",
+      "options": [
+        { "label": "Crio um tratamento visual bonito para o usuário (Toast)", "type": "Frontend" },
+        { "label": "Logo o erro no Sentry e faço retry da transação", "type": "Backend" },
+        { "label": "Verifico os logs do container e a saúde do pod", "type": "DevOps" }
+      ]
+    },
+    {
+      "text": "Sexta-feira, 17h. O que você faz?",
+      "options": [
+        { "label": "Ajusto aquele pixel que estava me incomodando", "type": "Frontend" },
+        { "label": "Refatoro uma classe antiga para limpar o código", "type": "Backend" },
+        { "label": "Bloqueio deploy em produção para garantir o fim de semana", "type": "DevOps" }
+      ]
+    }
+  ],
+  "results": {
+    "Frontend": {
+      "title": "Visionário do Frontend 🎨",
+      "description": "Você vive para a experiência do usuário. Para você, performance é visual e interfaces feias são um crime. Seu mundo gira em torno de Componentes, Estado e Acessibilidade."
+    },
+    "Backend": {
+      "title": "Arquiteto do Backend 🏗️",
+      "description": "Você gosta do que acontece por baixo do capô. Segurança, escalabilidade e integridade dos dados são seus mantras. Frontend é apenas um consumidor da sua API perfeita."
+    },
+    "DevOps": {
+      "title": "Guardião da Infra (DevOps) ⚙️",
+      "description": "Você garante que o show continue. Automação é sua paixão e você prefere escrever YAML a escrever HTML. Se o servidor está de pé, você está feliz."
+    }
+  }
+}
