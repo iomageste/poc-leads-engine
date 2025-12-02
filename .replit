@@ -37,12 +37,7 @@ externalPort = 3001
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 45213
-externalPort = 3000
-
 [deployment]
 deploymentTarget = "static"
-run = ["bash", "-c", "cd apps/quiz-perfil-tech && npx vite preview --host 0.0.0.0 --port 5000 --strictPort"]
 build = ["npm", "run", "build", "-w", "apps/quiz-perfil-tech"]
 publicDir = "apps/quiz-perfil-tech/dist"
