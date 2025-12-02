@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz: Guerras Mundiais - ENEM</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // mock-bridge.js
+      // Simula a presença do ambiente corporativo para desenvolvimento local/IA
+
+      console.log("🔧 Mock Bridge Carregada");
+
+      window.AppBridge = {
+        // Simula usuário logado. Mude para null para testar fluxo deslogado.
+        user: {
+          id: "user_123",
+          name: "Tester da Silva",
+          email: "teste@empresa.com"
+        },
+
+        // Simula ação de login
+        login: () => {
+          alert("[BRIDGE] Redirecionando para SSO... (Simulação)");
+          // Num cenário real, aqui teria um redirect. 
+          // No mock, podemos recarregar a página fingindo que logou.
+          console.log("Login solicitado");
+        },
+
+        // Simula disparo de tracking
+        track: (eventName, payload) => {
+          console.log(`[TRACKING] Evento: ${eventName}`, payload);
+        },
+
+        // Simula envio de respostas para API
+        submit: async (data) => {
+          console.log("[SUBMIT] Enviando payload para API...", data);
+
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              alert("Respostas enviadas com sucesso! (Simulação API 200 OK)");
+              resolve({ success: true, resultId: "result_A" });
+            }, 1000);
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

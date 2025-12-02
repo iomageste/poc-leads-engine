@@ -1,0 +1,50 @@
+{
+  "title": "Quiz: Guerras Mundiais para o ENEM",
+  "questions": [
+    {
+      "text": "Qual foi o estopim que desencadeou o início da Primeira Guerra Mundial em 1914?",
+      "options": [
+        { "label": "A invasão da Polônia pela Alemanha", "correct": false },
+        { "label": "O assassinato do arquiduque Francisco Ferdinando em Sarajevo", "correct": true },
+        { "label": "O Tratado de Versalhes", "correct": false },
+        { "label": "A Revolução Russa de 1917", "correct": false }
+      ]
+    },
+    {
+      "text": "Qual foi o principal objetivo do Tratado de Versalhes (1919) ao final da Primeira Guerra Mundial?",
+      "options": [
+        { "label": "Responsabilizar a Alemanha pela guerra e impor pesadas reparações", "correct": true },
+        { "label": "Dividir o território russo entre os aliados", "correct": false },
+        { "label": "Criar a Liga das Nações para promover a paz mundial", "correct": false },
+        { "label": "Estabelecer colônias alemãs na África", "correct": false }
+      ]
+    },
+    {
+      "text": "Qual evento histórico marcou a entrada dos Estados Unidos na Segunda Guerra Mundial?",
+      "options": [
+        { "label": "A invasão da França pela Alemanha", "correct": false },
+        { "label": "O ataque japonês à base de Pearl Harbor em 1941", "correct": true },
+        { "label": "A Batalha de Stalingrado", "correct": false },
+        { "label": "O Dia D (Desembarque na Normandia)", "correct": false }
+      ]
+    },
+    {
+      "text": "O Holocausto foi um dos eventos mais trágicos da Segunda Guerra Mundial. Aproximadamente quantas pessoas foram vítimas do genocídio nazista?",
+      "options": [
+        { "label": "Aproximadamente 2 milhões de pessoas", "correct": false },
+        { "label": "Aproximadamente 6 milhões de judeus, além de outros grupos perseguidos", "correct": true },
+        { "label": "Aproximadamente 10 milhões de soldados", "correct": false },
+        { "label": "Aproximadamente 1 milhão de pessoas", "correct": false }
+      ]
+    },
+    {
+      "text": "Qual foi a principal consequência geopolítica após o fim da Segunda Guerra Mundial?",
+      "options": [
+        { "label": "A unificação da Europa sob um único governo", "correct": false },
+        { "label": "O início da Guerra Fria entre EUA e URSS", "correct": true },
+        { "label": "A dissolução das Nações Unidas", "correct": false },
+        { "label": "A independência imediata de todas as colônias africanas", "correct": false }
+      ]
+    }
+  ]
+}
