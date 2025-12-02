@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:template": "npm run dev -w apps/_template"
+    "dev:template": "npm run dev -w apps/_template",
+    "dev:quiz-perfil-tech": "npm run dev -w apps/quiz-perfil-tech"
   }
 }
