@@ -1,0 +1,50 @@
+{
+  "title": "Que tipo de estudante falido voce e?",
+  "questions": [
+    {
+      "text": "Como voce estuda para uma prova importante?",
+      "options": [
+        { "label": "Comeco 3 semanas antes. To brincando, 3 horas antes na madrugada" },
+        { "label": "Marco resumos coloridos que nunca mais vou ler" },
+        { "label": "Assisto video no 2x e finjo que absorvi algo" },
+        { "label": "Rezo pro professor cancelar a aula" }
+      ]
+    },
+    {
+      "text": "Qual sua relacao com trabalhos em grupo?",
+      "options": [
+        { "label": "Eu faco tudo porque ninguem presta" },
+        { "label": "Sumo e apareco so pra assinar o nome" },
+        { "label": "Fico mandando meme no grupo em vez de trabalhar" },
+        { "label": "Crio um PPT lindo mas sem conteudo nenhum" }
+      ]
+    },
+    {
+      "text": "O que tem na sua mochila agora?",
+      "options": [
+        { "label": "Cadernos em branco e 47 canetas sem tampa" },
+        { "label": "Restos de lanche de 3 dias atras" },
+        { "label": "So o celular e fone. Caderno e coisa do passado" },
+        { "label": "Mochila? Eu levo as coisas na mao tipo mendigo" }
+      ]
+    },
+    {
+      "text": "Como voce lida com deadlines?",
+      "options": [
+        { "label": "Ignoro ate o ultimo minuto e entro em panico" },
+        { "label": "Faco uma planilha de organizacao que nunca sigo" },
+        { "label": "Invento desculpas criativas pro professor" },
+        { "label": "Aceito meu destino e entrego qualquer coisa" }
+      ]
+    },
+    {
+      "text": "Qual sua estrategia na aula online?",
+      "options": [
+        { "label": "Camera desligada, ainda na cama, meio dormindo" },
+        { "label": "Entro, muto tudo e jogo videogame" },
+        { "label": "Deixo o video rodando enquanto faco outra coisa" },
+        { "label": "Entro atrasado, saio mais cedo, nunca entendi nada" }
+      ]
+    }
+  ]
+}
