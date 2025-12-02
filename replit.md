@@ -59,14 +59,25 @@ Follow the workflow in `ai_instructions.md`:
 3. Develop within the src/ folder
 4. Add run script to root package.json if needed
 
+## Deployment
+The project is configured for static deployment:
+- **Build command**: `npm run build -w apps/quiz-perfil-tech`
+- **Output directory**: `apps/quiz-perfil-tech/dist`
+- **Deployment type**: Static (serves pre-built HTML, CSS, JS files)
+
+The build process generates optimized production files in the dist folder that can be served statically.
+
 ## Recent Changes (Dec 2, 2024)
-- Configured all Vite apps for Replit environment (0.0.0.0:5000)
+- Configured quiz-perfil-tech Vite app for Replit environment (port 5000)
+- Other apps (template, quiz-guerras-mundiais) use default ports to avoid conflicts
 - Set up HMR for proxy compatibility (WSS on port 443)
 - Updated .gitignore for Node.js artifacts
-- Configured workflow for quiz-perfil-tech app
+- Configured static deployment with build step
+- Verified build process works correctly
 
 ## Important Notes
-- Port 5000 is required for Replit webview
+- Port 5000 is required for Replit webview (only configured for main app)
 - All frontend servers must bind to 0.0.0.0 (not localhost)
 - AppShell component is read-only (from packages/shell)
 - No external dependencies should be added without review
+- Each app in the monorepo can specify its own port to allow concurrent development
