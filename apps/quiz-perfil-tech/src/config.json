@@ -1,112 +1,59 @@
 {
-  "title": "Que tipo de estudante você é?",
-  "subtitle": "Um quiz rápido, irônico e dolorosamente verdadeiro.",
-  "heroEmoji": "📚✨",
+  "title": "Descubra seu Perfil Tech",
   "questions": [
     {
-      "text": "Como é sua manhã antes de uma prova?",
+      "text": "Quando um site cai, qual seu primeiro pensamento?",
       "options": [
-        { "label": "Acordei 3 horas antes, estudo calmo", "type": "asmr" },
-        { "label": "Setup lindo no desk, zero estudo", "type": "setup" },
-        { "label": "Modo pânico total, não durmo", "type": "sobrevivente" },
-        { "label": "Que prova? Já esqueci do grupo", "type": "desaparecido" },
-        { "label": "Procurando resumo no Google", "type": "resumos" }
+        { "label": "A culpa é do CSS que quebrou o layout", "type": "Frontend" },
+        { "label": "O banco de dados deve ter travado (deadlock)", "type": "Backend" },
+        { "label": "O servidor estourou a memória ou o deploy falhou", "type": "DevOps" }
       ]
     },
     {
-      "text": "Seu método de estudo favorito é:",
+      "text": "Qual ferramenta você prefere abrir primeiro?",
       "options": [
-        { "label": "Assisto vídeo de gente estudando ASMR", "type": "asmr" },
-        { "label": "Estudo em café da moda, setup impecável", "type": "setup" },
-        { "label": "Na noite anterior, rezando", "type": "sobrevivente" },
-        { "label": "Qual estudo? To de ghost", "type": "desaparecido" },
-        { "label": "Ctrl+C Ctrl+V de resumo pronto", "type": "resumos" }
+        { "label": "Figma / Chrome DevTools", "type": "Frontend" },
+        { "label": "Postman / Datagrip", "type": "Backend" },
+        { "label": "Terminal / AWS Console", "type": "DevOps" }
       ]
     },
     {
-      "text": "Quando chega a semana de prova, você:",
+      "text": "O que te dá mais satisfação?",
       "options": [
-        { "label": "Mantém rotina saudável e organizado", "type": "asmr" },
-        { "label": "Monta caneta premium, posa na câmera, não estuda", "type": "setup" },
-        { "label": "Vira um espírito assombrado da biblioteca", "type": "sobrevivente" },
-        { "label": "Lê mensagem do grupo e vira Houdini", "type": "desaparecido" },
-        { "label": "Copypasta de 50 resumos diferentes", "type": "resumos" }
+        { "label": "Ver a animação rodando a 60fps suave", "type": "Frontend" },
+        { "label": "Uma query complexa rodando em milissegundos", "type": "Backend" },
+        { "label": "O pipeline CI/CD passando verde em 1 min", "type": "DevOps" }
       ]
     },
     {
-      "text": "Sua relação com os prazos é:",
+      "text": "Como você lida com erros?",
       "options": [
-        { "label": "Entrego com dias de antecedência", "type": "asmr" },
-        { "label": "Entrego no prazo mas gastei tudo em desk setup", "type": "setup" },
-        { "label": "Entrego 23:59 ou não entrego", "type": "sobrevivente" },
-        { "label": "Qual prazo? Que grupo? Que matéria?", "type": "desaparecido" },
-        { "label": "Copia de quem entregou antes", "type": "resumos" }
+        { "label": "Crio um tratamento visual bonito para o usuário (Toast)", "type": "Frontend" },
+        { "label": "Logo o erro no Sentry e faço retry da transação", "type": "Backend" },
+        { "label": "Verifico os logs do container e a saúde do pod", "type": "DevOps" }
       ]
     },
     {
-      "text": "Depois de passar na prova, você comemora:",
+      "text": "Sexta-feira, 17h. O que você faz?",
       "options": [
-        { "label": "Com satisfação e segue estudando", "type": "asmr" },
-        { "label": "Comprando mais RGB pro setup", "type": "setup" },
-        { "label": "Jurando que nunca mais volta pra escola", "type": "sobrevivente" },
-        { "label": "Reaparece no grupo e vira meme", "type": "desaparecido" },
-        { "label": "Compartilha o resumo que copiei", "type": "resumos" }
+        { "label": "Ajusto aquele pixel que estava me incomodando", "type": "Frontend" },
+        { "label": "Refatoro uma classe antiga para limpar o código", "type": "Backend" },
+        { "label": "Bloqueio deploy em produção para garantir o fim de semana", "type": "DevOps" }
       ]
     }
   ],
-  "profiles": [
-    {
-      "id": "asmr",
-      "emoji": "🧘",
-      "title": "Estudante ASMR",
-      "subtitle": "Estuda vendo outros estudarem.",
-      "description": "Você é zen demais. Organizado, disciplinado e provavelmente tem um schedule no Google Calendar. Enquanto outros entram em pânico, você está com café e lo-fi beats.",
-      "color": "from-blue-100 to-cyan-100",
-      "accent": "blue"
+  "results": {
+    "Frontend": {
+      "title": "Visionário do Frontend 🎨",
+      "description": "Você vive para a experiência do usuário. Para você, performance é visual e interfaces feias são um crime. Seu mundo gira em torno de Componentes, Estado e Acessibilidade."
     },
-    {
-      "id": "setup",
-      "emoji": "🎧",
-      "title": "Produtivo de Mentirinha",
-      "subtitle": "Setup lindo, zero estudo.",
-      "description": "Seu desk é perfeito, sua câmera é 4K, mas você estuda 10 minutos por sessão. A indústria de RGB sabe seu nome.",
-      "color": "from-pink-100 to-rose-100",
-      "accent": "pink"
+    "Backend": {
+      "title": "Arquiteto do Backend 🏗️",
+      "description": "Você gosta do que acontece por baixo do capô. Segurança, escalabilidade e integridade dos dados são seus mantras. Frontend é apenas um consumidor da sua API perfeita."
     },
-    {
-      "id": "sobrevivente",
-      "emoji": "🔥",
-      "title": "Sobrevivente da Prova",
-      "subtitle": "Vive no modo pânico.",
-      "description": "Nunca estudou cedo na vida. Você descobre a matéria 2 horas antes da prova e AINDA assim consegue passar. Pura adrenalina e cafeteria open 24h.",
-      "color": "from-orange-100 to-red-100",
-      "accent": "orange"
-    },
-    {
-      "id": "desaparecido",
-      "emoji": "🕳️",
-      "title": "Desaparecido do Grupo",
-      "subtitle": "Ninguém sabe, ninguém viu.",
-      "description": "Qual grupo de estudo? Qual matéria? Você lê mensagem às 3am e some de novo. Reaparece no dia da prova tipo um Batman acadêmico.",
-      "color": "from-purple-100 to-indigo-100",
-      "accent": "purple"
-    },
-    {
-      "id": "resumos",
-      "emoji": "📝",
-      "title": "Caçador de Resumos",
-      "subtitle": "Ctrl+F vibes.",
-      "description": "Você não estuda, você 'otimiza'. Um mestre na arte de encontrar resumos, montar coletânea e rezar que caia na prova.",
-      "color": "from-yellow-100 to-amber-100",
-      "accent": "yellow"
+    "DevOps": {
+      "title": "Guardião da Infra (DevOps) ⚙️",
+      "description": "Você garante que o show continue. Automação é sua paixão e você prefere escrever YAML a escrever HTML. Se o servidor está de pé, você está feliz."
     }
-  ],
-  "testimonials": [
-    "Achei ofensivo e amei. 😭",
-    "Vi minha vida acadêmica passar diante dos meus olhos.",
-    "Finalmente um resultado que faz sentido.",
-    "Muito eu. Muito mesmo. De verdade.",
-    "Enviei pro meu pai, ele também fez. 💀"
-  ],
-  "cta": "Vai, faz o quiz. É rápido. Prometo. (Eu acho.) 🫠"
+  }
 }
