@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
+    port: 5000,
+    strictPort: true,
     allowedHosts: ['.replit.dev', '.repl.co'],
     hmr: {
       port: 443,
