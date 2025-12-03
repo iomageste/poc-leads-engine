@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico de Maturidade em Marketing Digital</title>
+    
+    <script>
+      if (!window.AppBridge) {
+        console.log("🔧 [Quiz Maturidade MKT] Mock Bridge Injetada para Desenvolvimento");
+        window.AppBridge = {
+          user: { id: "dev_user", name: "Desenvolvedor Local", email: "dev@local.com" },
+          login: () => alert("[MOCK] Redirecionando para Login..."),
+          track: (evt, data) => console.log(`[MOCK TRACKING] ${evt}`, data),
+          submit: async (data) => {
+            console.log("[MOCK SUBMIT]", data);
+            return new Promise(resolve => setTimeout(() => {
+              alert("Sucesso! Dados enviados (Simulação).");
+              resolve({ success: true });
+            }, 800));
+          }
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

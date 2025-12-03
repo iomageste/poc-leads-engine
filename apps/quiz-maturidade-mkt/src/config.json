@@ -1,0 +1,62 @@
+{
+  "title": "Diagnóstico de Maturidade em Marketing Digital",
+  "slug": "quiz-maturidade-mkt",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Como sua empresa gerencia os leads hoje?",
+      "options": [
+        { "label": "Planilhas de Excel ou Caderno", "type": "iniciante", "points": 10 },
+        { "label": "CRM Básico (Trello, Pipefy)", "type": "intermediario", "points": 20 },
+        { "label": "Automação Completa (HubSpot, Salesforce)", "type": "avancado", "points": 30 }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "Qual a frequência de envio de campanhas de e-mail?",
+      "options": [
+        { "label": "Não enviamos e-mails", "type": "iniciante", "points": 0 },
+        { "label": "Apenas em datas comemorativas", "type": "intermediario", "points": 15 },
+        { "label": "Fluxos de nutrição semanais e segmentados", "type": "avancado", "points": 30 }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "Como vocês medem o ROI (Retorno sobre Investimento)?",
+      "options": [
+        { "label": "Não sabemos medir", "type": "iniciante", "points": 5 },
+        { "label": "Olhamos curtidas e visualizações", "type": "intermediario", "points": 15 },
+        { "label": "Acompanhamos Custo por Lead (CPL) e Conversão de Vendas", "type": "avancado", "points": 35 }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "Qual é a sua principal fonte de tráfego?",
+      "options": [
+        { "label": "Indicações e Boca a boca", "type": "iniciante", "points": 10 },
+        { "label": "Postagens orgânicas em Redes Sociais", "type": "intermediario", "points": 20 },
+        { "label": "Mix de Ads (Pago) e SEO (Orgânico)", "type": "avancado", "points": 30 }
+      ]
+    }
+  ],
+  "results": {
+    "iniciante": {
+      "title": "Fase de Descoberta 🌱",
+      "description": "Você está no início da jornada. O foco agora deve ser organizar a casa: adotar um CRM básico e começar a capturar e-mails regularmente.",
+      "min_score": 0,
+      "max_score": 50
+    },
+    "intermediario": {
+      "title": "Fase de Crescimento 🚀",
+      "description": "Sua operação já roda, mas falta previsibilidade. É hora de investir em automação de marketing e parar de depender apenas de tráfego orgânico.",
+      "min_score": 51,
+      "max_score": 85
+    },
+    "avancado": {
+      "title": "Máquina de Vendas 🏆",
+      "description": "Parabéns! Sua maturidade digital é alta. O foco agora é otimização de conversão (CRO) e personalização em escala usando dados.",
+      "min_score": 86,
+      "max_score": 150
+    }
+  }
+}
