@@ -8,7 +8,8 @@ This is a monorepo for quiz-based lead generation applications. It contains mult
 leads-engine-monorepo/
 ├── apps/                    # Individual quiz applications
 │   ├── _template/          # Template for creating new quiz apps
-│   ├── quiz-perfil-tech/   # Tech profile quiz (currently running)
+│   ├── quiz-maturidade-mkt/ # Marketing Maturity Diagnostic (currently running)
+│   ├── quiz-perfil-tech/   # Tech profile quiz
 │   └── quiz-guerras-mundiais/  # World Wars quiz
 ├── packages/
 │   └── shell/              # Shared AppShell component with header/footer
@@ -24,7 +25,7 @@ leads-engine-monorepo/
 - **Language**: JavaScript (ES Modules)
 
 ## Current Configuration
-- **Main App**: quiz-perfil-tech
+- **Main App**: quiz-maturidade-mkt (Marketing Maturity Diagnostic)
 - **Port**: 5000 (configured for Replit webview)
 - **Host**: 0.0.0.0 (required for Replit proxy)
 - **HMR**: WebSocket on port 443 with WSS protocol
@@ -32,11 +33,12 @@ leads-engine-monorepo/
 ## Running the Project
 The project uses npm workspaces. The main workflow runs:
 ```bash
-npm run dev:quiz-perfil-tech
+npm run dev -w apps/quiz-maturidade-mkt
 ```
 
 To run other apps:
 ```bash
+npm run dev -w apps/quiz-perfil-tech
 npm run dev -w apps/quiz-guerras-mundiais
 npm run dev -w apps/_template
 ```
@@ -67,7 +69,14 @@ The project is configured for static deployment:
 
 The build process generates optimized production files in the dist folder that can be served statically.
 
-## Recent Changes (Dec 2, 2024)
+## Recent Changes (Dec 3, 2024)
+- Created new app: quiz-maturidade-mkt (Diagnóstico de Maturidade em Marketing Digital)
+- 4-question quiz with point-based scoring system
+- Results categorized into 3 levels: Iniciante (0-50), Intermediário (51-85), Avançado (86-150)
+- Uses Tailwind CSS with purple/amber gradient theme
+- Updated workflow to run quiz-maturidade-mkt as main app
+
+## Previous Changes (Dec 2, 2024)
 - Configured quiz-perfil-tech Vite app for Replit environment (port 5000)
 - Other apps (template, quiz-guerras-mundiais) use default ports to avoid conflicts
 - Set up HMR for proxy compatibility (WSS on port 443)
